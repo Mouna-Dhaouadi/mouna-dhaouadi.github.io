@@ -1,9 +1,655 @@
-<!DOCTYPE html>
+
 <html>
 <head>
-    <title>My Portfolio</title>
+
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet"  type="text/css" href="style.css">
+<link rel="stylesheet"  type="text/css" media="screen and (max-width: 768px)" href="style_phone.css">
+<link rel="stylesheet"  type="text/css" media="screen and (min-width: 768px)" href="style_tablet.css">
+<link rel="stylesheet"  type="text/css" media="screen and (min-width: 1024px)" href="style_desktop.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+<title>
+Mouna Dhaouadi Personal University Page
+</title>
+
+
 </head>
-<body>
-    <h1>Hello, world! Welcome to my website.</h1>
+
+<body bgcolor="#ffffff" text="#000000">
+
+<h1 align=center>Mouna Dhaouadi, M.Sc., Ph.D.</h1>
+
+<hr size=2>
+
+
+
+<div id="header">
+
+  <div id="photo">
+    <img src="images/picture.png" alt="photo de Mouna Dhaouadi" width="50%">
+  </div>
+   <div id="intro">
+   <p class="intro">Introduction:</p>
+      <ul>
+     	<li> <b>Status:</b> Lecturer at <a href='https://www.umontreal.ca/'>University of Montreal</a> </li>
+        <li></li>
+        <!----
+      <li>
+      <div style="border: 2px solid darkblue; padding: 10px; border-radius: 8px; display: inline-block;">
+      <span style="color: #A52A2A; font-weight:bold;">We are currently running a <a href="https://sites.google.com/view/rationale-in-commits/survey"> short 10-minute survey </a>on developer's practices on including rationale in code commits. If you are a developer or a maintainer, please fill it out! </span> 
+      </div>
+      </li> ---->
+      </ul>
+   </div>
+    <div id="contact">
+      <p class="intro">Contact information:</p>
+      <ul>
+        <li> <b>Email:</b> mouna.dhaouadi@umontreal.ca  </li>
+        <li> <b>Address:</b> Pavillon André-Aisenstadt, 2920, chemin de la tour, Montréal (Quebec), Canada H3C 3J7  </li>
+        <li> <b>Office:</b>  André-Aisenstadt 2238 </li>
+      </ul>
+    </div>
+     <div id="links">
+     <p class="intro">Quick Links:</p>
+      <ul>
+      <li> <a href="https://scholar.google.com/citations?user=HTXi8vkAAAAJ" target="_blank">  <i class="fa-brands fa-google-scholar"></i> Google Scholar profile </a>   </li>
+      <li>  <a href="https://www.researchgate.net/profile/Mouna_Dhaouadi" target="_blank"> <i class="fa-brands fa-researchgate"></i> ResearchGate profile </a> </li>
+      <li> <a href='https://www.twitter.com/Mouna_DHAOUADI' target="_blank">  <i class="fa-brands fa-x-twitter"></i> X (Twitter) profile </a> </li>
+      <li> <a href='https://mastodon.social/@mouna_dhaouadi' target="_blank"> <i class="fa-brands fa-mastodon"></i> Mastadon profile </a> </li>
+      <li> <a href='https://orcid.org/0000-0001-9336-7714' target="_blank"> <i class="fa-brands fa-orcid"></i> ORCiD</a></li>
+      </ul>
+     </div>
+</div>
+
+
+<!---------------------------------------------------BIO----------------------------------------->
+<hr size = 2 >
+<h2> Bio </h2>
+
+Between January 2021 and February 2026, I was a doctoral student at the <a href='https://www.umontreal.ca/'>University of Montreal</a>. I worked with <a href='https://michalis.famelis.info/'>Dr. Michalis Famelis</a> from <a href='https://geodes.iro.umontreal.ca/'>GEODES</a> lab and <a href='http://rali.iro.umontreal.ca/nie-site/jian-yun-nie-en'/> Dr. Jian-Yun Nie </a> from <a href='http://rali.iro.umontreal.ca/rali/?q=en'> Rali </a> lab. <b>My research concerned developers rationale extraction and management.</b>
+<br/>
+<br/>
+Between September 2019 and December 2020, I was a master's student at the <a href='https://geodes.iro.umontreal.ca/'>GEODES</a> lab at the <a href='https://www.umontreal.ca/'>University of Montreal</a>, and I worked with <a href='https://michalis.famelis.info/'>Dr. Michalis Famelis</a>. <b>My research was about uncertainty-aware modelling</b>.  For my thesis, I proposed an uncertainty modelling language and an approach for articulating design-time uncertainty.  During my master's, I also collaborated on work that tackled the treatment of uncertainty in Requirements Engineering.
+<br/>
+<br/>
+My undergraduate education was in Software Engineering at the <a href='http://www.insat.rnu.tn/Fr/accueil_46_34'>National Institute of Applied Sciences and Technology</a> (INSAT), in Tunisia. I did my graduation internship in 2019 under the supervision of <a href='http://kessentini.net/'>Dr. Marouane Kessentini</a> at the <a href='http://kessentini.net/ise-lab'>Intelligent Software Engineering </a> lab at the <a href='https://umdearborn.edu/'>University of Michigan-Dearborn</a>. During this internship, <b>my research was about security-aware refactoring</b>. I studied the possible correlations between the quality and the security of software programs when refactoring them, by augmenting an existing multi-objective optimization refactoring tool to take security into consideration. This work involved the automatic identification of a project’s security-critical files, and the estimation of their risks.
+<br/>
+
+ 
+<!------------------------------ BIG TABLE ----------------------------------------------------------------------->
+<hr size = 2 >
+<h2>Research Projects and Outcomes </h2>
+
+
+<table class="bigtable" id="bigtable">
+  <tr>
+    <th id="th1"  style="width:7%" >Research </br> Project</th>
+    <th id="th2"  style="width:27%" >Theses and Reports</th>
+    <th id="th3"  style="width:35%" >Peer-reviewed publications</th>
+    <th id="th4"  style="width:31%" >Research Talks, Presentations and Posters</th>
+  </tr>
+  
+  <tbody>
+  <tr>
+    <td class="project">Rationale extraction and management</td>
+    
+    <td>
+        <ul>
+        
+           <li>
+    
+		<b> <a href='https://hdl.handle.net/1866/44299'>Empowering rationale-aware commit-based development</a></b>
+		</br> Ph.D. Thesis, 2026.
+		</br> University of Montreal, <i>Montreal, QC, Canada</i>.
+		</br> Supervisors: <a href='https://michalis.famelis.info/'> Dr. Michalis Famelis </a> 
+   <br class="mobile-br">
+    and <a href='http://rali.iro.umontreal.ca/nie-site/jian-yun-nie-en/'>Dr. Jian-Yun Nie</a>
+     </br> <a href="PhD_Thesis_Mouna_Dhaouadi_defense_slides.pdf">Thesis Defense Slides</a> 
+	</li>
+        
+        
+      </br>  
+        
+        
+        
+    <li>
+		<b> <a href=''>Extraction and Management of Rationale</a></b>
+		</br> Ph.D. Research Proposal, 2022.
+		</br> University of Montreal, <i>Montreal, QC, Canada</i>.
+		</br> Supervisors: <a href='https://michalis.famelis.info/'> Dr. Michalis Famelis </a> 
+   <br class="mobile-br">
+    and <a href='http://rali.iro.umontreal.ca/nie-site/jian-yun-nie-en/'>Dr. Jian-Yun Nie</a>
+	</li>
+
+    </ul>
+    
+    
+    </td>
+    <td>
+    
+    
+    	<ul>
+     
+     <li>
+					<b> <a href='https://doi.org/10.1145/3803437.3804435'>Understanding Developers’ Experiences in Seeking  <br class="mobile-br">  Similar Rationale Information in Commit Messages </a></b> 
+				</br> <i>Mouna Dhaouadi</i>.
+		    </br> <i> International Conference on the <br class="mobile-br"> Foundations of Software Engineering (FSE), 2026.</i> <b> <br class="mobile-br"> Conference - Extended Abstract.</b> <br class="mobile-br">  <i>Student Research Competition.</i>
+			</br> <a href='FSE_2026_SRC_Camera_Ready.pdf'>Author's version</a> <!-- / <a href=''>Slides</a> </i> -->
+				</li>
+        
+    
+     
+      </br>
+     
+     
+     <li>
+					<b> <a href='https://doi.org/10.1145/3729383'>Automated Extraction and Analysis of Developer’s <br class="mobile-br"> Rationale in Open Source Software</a></b> 
+				</br> <i>Mouna Dhaouadi</i>, Bentley Oakes, Michalis Famelis.
+				</br> <i> Proceedings of the ACM on Software <br class="mobile-br">Engineering (PACMSE), 2025.</i> 
+        <br class="mobile-br">  <b> Journal.</b>
+				</br> <a href='https://arxiv.org/abs/2506.11005'>arXiv</a> </i>
+				</li>
+        
+     
+       </br>
+     
+     
+     <li>
+					<b> <a href='https://doi.org/10.1109/MSR66628.2025.00120'>CoMRAT: Commit Message Rationale Analysis <br class="mobile-br"> Tool </a></b> 
+				</br> <i>Mouna Dhaouadi</i>, Bentley Oakes, Michalis Famelis.
+				</br> <i>International Conference on Mining <br class="mobile-br"> Software Repositories (MSR), 2025.</i>
+        <br class="mobile-br">  <b> Conference - Short paper.</b> <br class="mobile-br">  <i> Data and Tool Showcase Track.</i>  
+				</br> <a href='https://arxiv.org/abs/2506.10986'>arXiv</a> </i> 	/ <a href='https://www-labs.iro.umontreal.ca/~dhaouadm/MSR_2025_presentation.pdf'>Slides</a> </i>  / <a href='https://youtu.be/xk8JR3UZQc8'>Demo</a> </i>  
+				</li>
+     
+     
+     
+      </br>
+     
+     
+     <li>
+					<b> <a href='https://doi.org/10.1145/3643916.3644413'>Rationale Dataset and Analysis for the Commit 
+          <br class="mobile-br"> Messages of the Linux Kernel Out-of-Memory <br class="mobile-br">  Killer</a></b> 
+				</br> <i>Mouna Dhaouadi</i>, Bentley Oakes, Michalis Famelis.
+				</br> <i>International Conference on Program <br class="mobile-br"> Comprehension (ICPC), 2024.</i>
+        <br class="mobile-br">  <b> Conference - Long paper.</b> 
+				</br> <a href='https://arxiv.org/pdf/2403.18832.pdf'>arXiv</a> </i> 	/ <a href='https://www-labs.iro.umontreal.ca/~dhaouadm/icpc-talk-2024.pdf'>Slides</a> </i> 
+				</li>
+     
+     
+     
+     </br>
+     
+       <li>
+					<b> <a href='https://doi.org/10.1145/3611643.3617851'>A Data Set of Extracted Rationale from Linux <br class="mobile-br"> Kernel Commit Messages</a></b> 
+				</br> <i>Mouna Dhaouadi</i>.
+				</br> <i> Joint European Software Engineering Conference <br class="mobile-br"> and Symposium on the Foundations of Software <br class="mobile-br">  Engineering (ESEC/FSE), 2023.</i> <b> <br class="mobile-br"> Conference - Extended Abstract.</b> <br class="mobile-br">  <i>Student Research Competition.</i>
+			</br> <a href='https://www-labs.iro.umontreal.ca/~dhaouadm/FSE_2023___SRC_research_abstract.pdf'>Author's version</a> <!-- / <a href=''>Slides</a> </i> -->
+				</li>
+
+
+     
+      </br>
+     
+        	<li>
+					<b> <a href='https://www.computer.org/csdl/proceedings-article/models-c/2023/249800a622/1T96jgPQZvW'>Towards Understanding and Analyzing Rationale <br class="mobile-br"> in Commit Messages using a Knowledge Graph <br class="mobile-br">  Approach</a></b> 
+				</br> <i>Mouna Dhaouadi</i>, Bentley Oakes, Michalis Famelis.
+				</br> <i>Model Driven Engineering Languages and Systems <br class="mobile-br">  (MODELS) Companion, 2023.</i> <br class="mobile-br">  <b> Workshop paper.</b> 
+        <br class="mobile-br"> <i>MDE Intelligence.</i>
+				</br> <a href='https://arxiv.org/abs/2311.03358'>arXiv</a> </i> 	/ <a href='https://www-labs.iro.umontreal.ca/~dhaouadm/MDE_Intelligence_2023_presentation.pdf'>Slides</a> </i> 
+				</li>
+        
+     
+     
+         </br>
+                    
+         	<li>
+					<b> <a href='https://dl.acm.org/doi/10.1145/3551349.3559547'>End-to-End Rationale Reconstruction</a></b> 
+				</br> <i>Mouna Dhaouadi</i>, Bentley Oakes, Michalis Famelis.
+				</br> <i>Automated Software Engineering (ASE), 2022.</i> <br class="mobile-br"> <b> Conference - Short paper.</b> <br class="mobile-br">  <i>NIER Track.</i>
+				</br> <a href='https://arxiv.org/abs/2209.00398'>arXiv</a> </i> 	/ <a href='https://www.slideshare.net/secret/wudUO2aLqef67Z'>Slides</a> </i> 
+				</li>
+
+
+	</br> 
+ 
+          <li>
+					<b> <a href='https://dl.acm.org/doi/10.1145/3551349.3559568'>Extraction and Management of Rationale</a></b> 
+				</br> <i>Mouna Dhaouadi</i>.
+				</br> <i>Automated Software Engineering (ASE), 2022.</i> <br class="mobile-br">  <b> Conference - Extended Abstract.</b> <br class="mobile-br">  <i>Doctoral Symposium.</i>
+			</br> <a href='https://www-labs.iro.umontreal.ca/~dhaouadm/ASE_DS_2022_CR_version.pdf'>Author's version</a> <!-- / <a href=''>Slides</a> </i> -->
+				</li>
+
+
+
+          </ul>
+    
+    
+    
+    </td>
+    
+    
+    
+    <td>
+    		
+        	<ul>
+         
+         	</br>
+         
+         
+          <li> <b>Le développement durable du logiciel <br class="mobile-br"></b> 
+              			</br>
+              			A Popularized Presentation (in French). <br class="mobile-br">  <i> <a href="https://esp.umontreal.ca/concours-de-vulgarisation-scientifique/ma-these-en-180-secondes/">Concours Ma thèse en 180 secondes</a>, March 2026.</i> 
+              			</br>
+              			<a href='https://youtu.be/_TvTcRrW4lg?t=1610'>Video Recording</a>
+                    <!---- Back up video recording (in case the above link breaks: in vimeo directly : https://vimeo.com/691646272?embedded=true&source=vimeo_logo&owner=4072211  
+                    --->
+              
+              		</li>
+    
+    
+         </br>
+         
+         
+                <li> <b>Automated Extraction and Analysis of Developer’s <br class="mobile-br"> Rationale in Open Source Software  </b> 
+              			</br>
+              			Conference-Style Presentation. <br class="mobile-br">  <i> <a href='https://semtl.github.io/meeting/2025/08/26/UdeM/'>SEMTL Meeting at UdeM</a>, <br class="mobile-br">  September 2025.</i>  
+                    </br>	<a href='https://www-labs.iro.umontreal.ca/~dhaouadm/PACMSE_25_SEMTL.pdf'>Slides</a>            
+              		</li>
+                 
+                 
+                 </br>
+         
+           <li> <b>Analyse de la justification des messages de <br class="mobile-br"> commits</b> 
+              			</br>
+              			Popularized Presentation and Demo (in French). <br class="mobile-br">  <i> <a href='https://event.fourwaves.com/diro2025/pages'>Journée de la recherche du DIRO 2025</a>, <br class="mobile-br">  May 2025.</i>  
+                    </br>	<a href='https://www.youtube.com/watch?v=IMoCq-WvyBY&ab_channel=MounaDhaouadi'>Video</a>            
+              		</li>
+         
+         
+         
+              </br>
+              
+              
+                 
+             <li> <b>CoMRAT: Commit Message Rationale Analysis <br class="mobile-br">  Tool</b> 
+              			</br>
+              			Poster. <br class="mobile-br">  <i> <a href='https://2025.msrconf.org/room/icse-2025-venue-canada-hall-3-poster-area'>ICSE 2025 Posters</a>, <br class="mobile-br">  April 2025.</i>  
+                    </br>	<a href='https://www-labs.iro.umontreal.ca/~dhaouadm/CoMART-MSR_poster_A0_new_size_36_48.pdf'>PDF</a>            
+              		</li>
+         
+         
+         
+              </br>
+              
+             
+            
+             <li> <b>CoMRAT: Commit Message Rationale Analysis <br class="mobile-br">  Tool</b> 
+              			</br>
+              			Conference-Style Presentation. <br class="mobile-br">  <i> <a href='https://semtl.github.io/meeting/2025/03/15/Concordia/'>SEMTL Meeting and Posters at Concordia</a>, <br class="mobile-br">  April 2025.</i>  
+                    </br>	<i>Dry-run for MSR paper</i>             
+              		</li>
+         
+         
+         
+              </br>
+             
+           <li><b>A Data Set of Extracted Rationale from Linux <br class="mobile-br">  Kernel Commit Messages</b>
+         </br>
+         <i><a href='https://2023.esec-fse.org/track/fse-2023-student-research-competition#program'>ESEC/FSE Student Research Competition (SRC) <br class="mobile-br">  2023</a> </i>
+          </br>	  Poster.<i> (First round), December 5th, 2023. </i> <br class="mobile-br"> 	<a href='https://www-labs.iro.umontreal.ca/~dhaouadm/FSE-SRC-poster_new_version_final_final.pdf'>PDF</a>
+          </br> Presentation.<i> (Second round), December 6th, 2023.</i> <br class="mobile-br"> 	<a href='https://www-labs.iro.umontreal.ca/~dhaouadm/FSE_SRC_2023.pdf'>Slides</a>
+          </br> <b style="color: #A52A2A">Awarded the 3rd place in the Graduate Division </b>  
+         </li>
+         
+         </br>
+         
+         <li><b>Exploring Developers Rationale in the Linux <br class="mobile-br">  Kernel</b>
+         </br>
+         Lightening Talk. <br class="mobile-br">  <i><a href='https://cscan-infocan.ca/celebration-of-women-in-computing/'>Celebration of Women in Computing Conference <br class="mobile-br">  (CAN-CWIC)</a>, <br class="mobile-br">  October 2023.</i>
+         </br> <a href='https://www-labs.iro.umontreal.ca/~dhaouadm/SCAN-Info_lightening_talk.pdf'>Slides</a>
+         </li>
+         
+         </br>
+            
+             <li> <b>Towards Understanding and Analyzing Rationale <br class="mobile-br">  in Commit Messages using a Knowledge Graph <br class="mobile-br">  Approach</b> 
+              			</br>
+              			Poster. <br class="mobile-br">  <i> <a href='https://conf.researchr.org/details/models-2023/models-2023-posters/9/Towards-Understanding-and-Analyzing-Rationale-in-Commit-Messages-using-a-Knowledge-Gr'>MODELS 2023 Poster Session</a>, <br class="mobile-br">  October 2023.</i>           
+                        </br>		<a href='https://www-labs.iro.umontreal.ca/~dhaouadm/MDE-intelligence_poster_A0_CR.pdf'>PDF</a>
+              		</li>
+            	
+              
+         </br>
+            
+             <li> <b>End-to-end rationale reconstruction</b> 
+              			</br>
+              			Conference-Style Presentation. <br class="mobile-br">  <i> <a href='https://semtl.github.io/meeting/2022/09/01/UdeM/'>SEMTL Meeting at UdeM</a>, <br class="mobile-br">  September 2022.</i>  
+                    </br>	<i>Dry-run for ASE paper</i>             
+              		</li>
+         
+         
+         </br>
+                   <li> <b>Design rationale extraction and management</b> 
+              			</br>
+              			Research Flash Talk.<br class="mobile-br">   <i> <a href='https://geodes.iro.umontreal.ca/events/research-day-and-symposium-2022'>GEODES Research Day and Symposium</a>, <br class="mobile-br">  May 2022.</i> 
+              			</br>
+              			<a href='https://www-labs.iro.umontreal.ca/~dhaouadm/Rationale%20Extraction%20Pipeline_Geodes%20Research%20Day.pdf'>Slides</a>
+                 <!--  <a href='https://www.slideshare.net/secret/pblp8nPxL6LeWC'>Slides</a> -->
+              
+              		</li>
+
+
+            
+            
+
+          </ul>
+    </td>
+  </tr>
+  
+  
+  
+  
+  
+    
+     <tr>
+    <td class="project">Intelligent Concrete Syntax Generation</td>
+  
+  
+    <td></td>
+    
+    
+    
+    <td>
+    
+    
+    	<ul>
+         </br>
+                    
+        
+					<b> <a href='https://dl.acm.org/doi/10.1145/3640310.3674085'>Toward Intelligent Generation of Tailored <br class="mobile-br">  Concrete Syntax</a></b> 
+				</br> Meriem Ben Chaaben, Oussama Ben Sghaier, <br class="mobile-br">  <i>Mouna Dhaouadi</i>, Nafisa Elrasheed, Ikram Darif, <br class="mobile-br"> Imen Jaoua, Bentley Oakes, Eugene Syriani <br class="mobile-br">  and Mohammad Hamdaqa. 
+			</br> <i> Model Driven Engineering Languages and Systems <br class="mobile-br">  (MODELS), 2024. <br class="mobile-br">  </i> <b> Conference - Long paper</b> 
+       
+				</li> 
+
+  </ul>
+    
+    
+    
+    </td>
+    
+    
+    
+    <td></td>
+  </tr>
+  
+ 
+  
+   
+     <tr>
+    <td class="project">Adversary-aware machine learning</td>
+  
+  
+    <td>
+      <ul>
+      </br>
+      
+    <li>
+	<b> <a href='https://www.researchgate.net/profile/Mouna-Dhaouadi/publication/338105748_A_Survey_About_Adversarial_Learning/links/5dfebbc8299bf10bc36ec8b3/A-Survey-About-Adversarial-Learning.pdf'>
+  A survey about adversarial learning</a></b>
+		</br>  Technical Report, 2019.
+		
+	
+	</li>
+
+    </ul>
+    
+    </td>
+    
+    
+    
+    <td>
+    
+    
+    	<ul>
+         </br>
+                    <li>
+        
+					<b> <a href='https://ieeexplore.ieee.org/document/10459949'>Efficient Defense Against Model Stealing Attacks <br class="mobile-br">  on Convolutional Neural Networks</a></b>
+				</br> Kacem Khaled, <i>Mouna Dhaouadi</i>, <br class="mobile-br">  Felipe Magalhaes, Gabriela Nicolescu.
+			</br> <i>International Conference on Machine Learning and <br class="mobile-br">  Applications (ICMLA), 2023.</i> <br class="mobile-br">  <b> Conference - Long paper</b> 
+				</br> <a href='https://arxiv.org/pdf/2309.01838.pdf'>arXiv</a> </i>
+       
+				</li> 
+
+  </ul>
+    
+    </td>
+
+    <td></td>
+  </tr>
+  
+  
+  
+  <tr>
+    <td class="project">Uncertainty-aware modelling</td>
+    <td>
+    <ul>
+    <li>
+		<b> <a href='http://hdl.handle.net/1866/25098'>Articulating design-time uncertainty with DRUIDE</a></b>
+		</br> M.Sc. Thesis, 2020.
+		</br> University of Montreal, <i>Montreal, QC, Canada</i>.
+		</br> Supervisor: <a href='https://michalis.famelis.info/'> Dr. Michalis Famelis </a>
+	</li>
+
+    </ul>
+    </td>
+    
+    
+    
+    
+    
+    <td>
+    
+    			<ul>
+				</br>
+				
+				<li>
+					<b> <a href='http://www.jot.fm/issues/issue_2021_03/article3.pdf'>Towards a Generic Method for Articulating <br class="mobile-br">  Design-time Uncertainty </a></b>
+				</br> <i>Mouna Dhaouadi</i>, Kate M. B. Spencer, <br class="mobile-br">  Megan H. Varnum, Alicia M. Grubb, <br class="mobile-br">  Michalis Famelis.
+				</br> <i> The Journal of Object Technology (JOT), 2021.</i> <br class="mobile-br">   <b> Journal.</b> 
+				</br> <a href= 'https://youtube.com/watch?v=9j6Sdk1AW7w'>Teaser video</a> / <a href='https://www.slideshare.net/secret/H7wKXe46xf8JtI'>Slides</a> presented in <i> <a href= 'https://staf2021.hvl.no/events/ecmfa2021/papers/' > ECMFA 2021</a>. </i>
+				</li>
+
+
+				</br>
+
+
+ 				<li>
+				 <b> <a href='https://dl.acm.org/doi/abs/10.1145/3419804.3421451'> A Vision Towards A Conceptual Basis for the <br class="mobile-br">  Systematic Treatment of Uncertainty in Goal <br class="mobile-br">  Modelling </a> </b> 
+				 </br> Sanaa Alwidian, <i>Mouna Dhaouadi</i>, Michalis <br class="mobile-br">  Famelis.
+				</br> <i> System Analysis and Modelling Conference (SAM), <br class="mobile-br"> 2020.</i> <br class="mobile-br">  <b>Conference - Short paper.</b>
+				</br> <a href='https://classe.iro.umontreal.ca/videos/watch/63fae1d3-1481-4673-88f2-652d5b57037c'> Presentation video </a>
+				</li>
+
+
+				</br>
+			</ul>
+
+    </td>
+    
+    <td>
+    		<ul>
+            </br>
+                   <li> <b>Vers une méthode générique d'articulation de <br class="mobile-br">  l'incertitude au moment de la conception</b> 
+              			</br>
+              			A Popularized Presentation (in French). <br class="mobile-br">  <i> <a href="https://www.acfas.ca/evenements/congres">89th Acfas Congress</a>, May 2022.</i> 
+              			</br>
+              			<a href='https://www.acfas.ca/evenements/congres/89/contribution/methode-generique-articulation-incertitude-au-moment-conception'>Video Recording</a>
+                    <!---- Back up video recording (in case the above link breaks: in vimeo directly : https://vimeo.com/691646272?embedded=true&source=vimeo_logo&owner=4072211  
+                    --->
+              
+              		</li>
+    
+    	          	</br>
+    
+                 
+    
+              		<li> <b> Articulating design-time uncertainty with DRUIDE</b> 
+              			</br>
+              			M.Sc. Thesis Presentation. <br class="mobile-br">  <i> Geodes Lab Grad Day, January 2021.</i> 
+              			</br>
+              			<a href='https://www.youtube.com/watch?v=VLwZZmqxizU'>Video Recording</a> / <a href='https://www.slideshare.net/secret/o9XSIuzatYffUw'>Slides</a>
+              
+              		</li>
+              
+              		</br>
+              	
+              		<li> <b> A design-time uncertainty-aware modelling <br class="mobile-br">  language </b> 
+              			</br>
+              			Research Talk. <br class="mobile-br">  <i><a href='https://richpaige.github.io/uncertainty2020/'>Uncertainty in Modeling workshop (UM)</a>, <br class="mobile-br">  October 2020.</i>          
+              			</br>
+              			<a href='https://www.youtube.com/watch?v=ZT42so7KtKY&feature=youtu.be'>Pre-recorded Presentation</a> / <a href="https://youtu.be/7945tqeQp3s">Live Flash Talk</a>
+              	</li>
+              	
+    
+            </ul>
+    </td>
+    
+  </tr>
+  
+   <tr>
+    <td class="project">Security-aware refactoring</td>
+    <td>
+    <ul>
+    <li>
+		<b> <a href='https://drive.google.com/file/d/1fm-cyirFZe0U37_feeyR4Cj28WAmjm7z/view'>A security aware refactoring approach for Java <br class="mobile-br">  programs</a></b> 
+ 		</br> Engineering Diploma Graduation Report, 2019.
+ 	 <!--	  </br> Bachelor Thesis, 2019. -->
+		</br> National Institute of Applied Sciences and <br class="mobile-br">  Technology, <br class="mobile-br">  <i>Tunis, Tunisia</i>.
+    </br> University of Michigan-Dearborn, <br class="mobile-br">  <i>Dearborn, Michigan, USA</i>. 
+		</br> Supervisors: Mrs Meriem Chater <br class="mobile-br">  and <a href='http://kessentini.net/'> Dr. Marouane Kessentini </a>
+    </br> <a href="https://www.slideshare.net/secret/gQc8AOyTK6dtB5">Graduation Defense Slides</a> 
+    
+	</li>
+    </ul>
+    </td>
+    <td>
+        		<ul>
+				</br>
+
+
+				<li>
+					<b> <a href='https://link.springer.com/article/10.1007/s10515-021-00281-2'> Prioritizing refactorings for security-critical code</a> </b>
+					</br> Chaima Abid, Vahid Alizadeh, Marouane <br class="mobile-br">  Kessentini, <i>Mouna Dhaouadi</i>, Rick Kazman.
+					</br> <i>Automated Software Engineering (ASE), 2021.</i> <br class="mobile-br">  <b>Journal.</b>
+				</li>
+
+
+				</br>
+
+				<li>
+				  <b> <a href='https://ieeexplore.ieee.org/abstract/document/9130035'> How Does Refactoring Impact Security When <br class="mobile-br">  Improving Quality? A Security Aware <br class="mobile-br">  Refactoring Approach </a> </b> 
+				  </br> Chaima Abid, Marouane Kessentini, Vahid <br class="mobile-br">  Alizadeh, <i>Mouna Dhaouadi</i>, Rick Kazman.
+				  </br> <i>IEEE Transactions on Software Engineering (TSE), <br class="mobile-br"> 2020.</i> <br class="mobile-br"> <b>Journal.</b>
+			    </br> Invited for <a href='https://2020.esec-fse.org/details/esecfse-2020-journal-first/6/How-Does-Refactoring-Impact-Security-When-Improving-Quality-A-Security-Aware-Refacto'> Journal-first presentation </a> at <br class="mobile-br">  <a href='https://2020.esec-fse.org'>  <i>ESEC/FSE 2020</i></a>.
+      	</br>  <a href= 'https://www.reddit.com/r/ESECFSE/comments/jl0rwb/how_does_refactoring_impact_security_when/'>Teaser video</a> / <a href='https://www.youtube.com/watch?v=ysZ7ka9kCFQ&t=2s&ab_channel=ChaimaAbid'> Presentation video </a>
+				</li>
+        
+			</ul> 
+    </td>
+    
+    <td></td>
+    
+  </tr>
+  
+  
+   </tbody>
+</table>
+
+
+
+<!--------------------------------------ACTIVITIES IN THE COMMUNITY------------------------------------------------------>
+<hr size=2>
+<h2>Activities in the Scientific Community</h2>
+
+<ul>
+		<li> <u  class="activity" > Student Volunteer </u> 
+          <ul>
+               <li> ESEC/FSE, 2023</i>.</li>
+               <li> MODELS, 2022</i>.</li>
+                 <li> ASE, 2022</i>.</li>
+		          <li> ICSE, 2021</i>.</li>
+		          <li> MODELS, 2020</i>. </li>
+	        </ul>	
+	    </li>
+      </br>
+      
+     	<li> <u  class="activity" > External Reviewer </u> 
+          <ul>
+		          <li> SANER, 2021.</li>
+              <li> MODELS, 2020.</li>
+	        </ul>
+	  </li>
+      </br>
+      
+     	<li> <u  class = "activity" > Program Committee Member </u> 
+          <ul>
+                 <li> Posters Track, MODELS, 2023.</li>
+                <li> Junior PC Track, MSR, 2023.</li>
+		          <li> Posters Track, MODELS, 2022.</li>
+              <li> Shadow PC Track, MSR, 2022.</li>
+	        </ul>
+	  </li>
+      </br>
+     	<li> <u class="activity"> Artifact Evaluation </u> 
+          <ul>
+          	
+		          <li> ICSE, 2024.</li>
+
+	        </ul>
+	  </li>
+     
+ </ul>
+
+
+<!-------------------------------------EVENTS AND CONFERENCE ATTENDED------------------------------------------------------->
+<hr size=2>
+
+<h2>Events / Conferences Attended</h2>
+
+	<ul>
+  	<li><a href='https://conf.researchr.org/home/icse-2025'> International Conference on Software Engineering (ICSE)</a>, April 30 - May 2, 2025, Ottawa, Canada.</li>
+ <li> <a href='https://2025.msrconf.org/'>Mining Software Repositories Conference (MSR)</a>, April 28-29, 2025, Ottawa, Canada.</li>
+ <li> <a href='https://2023.esec-fse.org/'>The ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE)</a>, December 3-8, 2023, San Francisco, California, United States.</li>
+ 	<li> <a href="https://semla.polymtl.ca/">Software Engineering for Machine Learning Applications (SEMLA) international symposium</a>, October 29-30, 2022, Montreal, Quebec, Canada.</li>
+ 	<li> <a href="https://conf.researchr.org/home/models-2022">International Conference on Model Driven Engineering Languages and Systems (MODELS)</a>, October 23-28, 2022, Montreal, Quebec, Canada.</li>
+  <li><a href='https://conf.researchr.org/home/ase-2022'>International Conference on Automated Software Engineering (ASE)</a>, October 10-14, 2022, Oakland, Michigan, United States.</li>
+  <li><a href='https://conf.researchr.org/home/msr-2022'> Mining Software Repositories Conference (MSR)</a>, May 18-20, 2022 <i>(Virtual)</i>.</li>
+  <!-- <li><a href='https://geodes.iro.umontreal.ca/events/research-day-and-symposium-2022'> GEODES Research Day and Symposium</a>, May 17, 2022.</li> -->
+ 	<li><a href='https://conf.researchr.org/home/icse-2022'> International Conference on Software Engineering (ICSE)</a>, May 8-20, 2022 <i>(Virtual)</i>.</li>
+ <!-- 	<li><a href='https://geodes.iro.umontreal.ca/events/seminar'> GEODES Seminar</a>, Several dates, 2022.</li> -->
+	<li><a href='https://conf.researchr.org/home/icse-2021'> International Conference on Software Engineering (ICSE)</a>, May 25-28, 2021 <i>(Virtual)</i>.</li>
+	<li><a href='https://2021.msrconf.org'> Mining Software Repositories Conference (MSR)</a>, May 17-19, 2021 <i>(Virtual)</i>.</li>
+	<li> <a href='https://sdl-forum.org/Events/SAM2020/index.htm'> System Analysis and Modelling Conference (SAM)</a>, October 19-20, 2020 <i>(Virtual)</i>. </li>	
+	<li> <a href="https://conf.researchr.org/home/models-2020">International Conference on Model Driven Engineering Languages and Systems (MODELS)</a>, October 15-23, 2020 <i>(Virtual)</i>.	</li>
+	</ul>
+
+
+<!------------------------------------------------------------------------------------------->
+<hr size=2>
+
+
+<p align=center>
+<img src="images/logo-udem.jpg" alt="GEODES Logo" width="150">
+
+</p>
+
 </body>
 </html>
+
