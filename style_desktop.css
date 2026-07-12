@@ -1,0 +1,37 @@
+/* Desktop styles (min-width 1024px) */
+/* @media  only screen and (min-width: 1024px) { */
+
+#header{
+  display:grid;
+  grid-gap: 20px;
+  padding: 15px;
+  background-color: #fff;
+  grid-template-columns: 23% 23% 23% 23%; 
+  grid-template-areas: 'photo intro contact links';
+}
+
+#photo {
+  grid-area: photo;
+     display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+#intro {
+  grid-area: intro;
+}
+
+#contact {
+  grid-area: contact;
+}
+
+#links {
+  grid-area: links;
+}
+
+.mobile-br {
+display:none;
+}
+
+
+/* } */
